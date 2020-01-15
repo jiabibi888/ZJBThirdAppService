@@ -1,0 +1,6 @@
+framework module ZJBThirdAppService {
+  umbrella header "ZJBThirdAppService-umbrella.h"
+
+  export *
+  module * { export * }
+}

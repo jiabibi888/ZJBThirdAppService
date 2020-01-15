@@ -1,0 +1,22 @@
+{
+  "name": "ZJBThirdAppService",
+  "version": "0.1.0",
+  "summary": "A short description of ZJBThirdAppService.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jiabibi888/ZJBThirdAppService",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jiabibi888": "zjb11934@ly.com"
+  },
+  "source": {
+    "git": "https://github.com/jiabibi888/ZJBThirdAppService.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZJBThirdAppService/Classes/**/*"
+}

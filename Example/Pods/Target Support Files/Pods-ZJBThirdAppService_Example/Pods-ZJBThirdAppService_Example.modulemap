@@ -1,0 +1,6 @@
+framework module Pods_ZJBThirdAppService_Example {
+  umbrella header "Pods-ZJBThirdAppService_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

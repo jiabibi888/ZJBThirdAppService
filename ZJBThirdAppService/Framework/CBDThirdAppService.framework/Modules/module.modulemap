@@ -1,0 +1,6 @@
+framework module CBDThirdAppService {
+  umbrella header "CBDThirdAppService.h"
+
+  export *
+  module * { export * }
+}
