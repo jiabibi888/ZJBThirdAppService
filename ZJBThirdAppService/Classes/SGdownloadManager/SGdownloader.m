@@ -39,7 +39,7 @@
         self.exceptedBytes = 0;
         _receiveData = [[NSMutableData alloc] initWithLength:0];
         _downloadedPercentage = 0.0f;
-        self.request = [[[NSMutableURLRequest alloc] initWithURL:fileURL cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:timeout] autorelease];
+        self.request = [[NSMutableURLRequest alloc] initWithURL:fileURL cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:timeout];
         self.connection = [NSURLConnection connectionWithRequest:self.request delegate:self];
     }
     return self;
@@ -53,7 +53,7 @@
         self.exceptedBytes = 0;
         _receiveData = [[NSMutableData alloc] initWithLength:0];
         _downloadedPercentage = 0.0f;
-        self.request = [[[NSMutableURLRequest alloc] initWithURL:fileURL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:timeout] autorelease];
+        self.request = [[NSMutableURLRequest alloc] initWithURL:fileURL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:timeout];
         [self.request setValue:[NSString stringWithFormat:@"bytes=%d-",startbyte] forKey:@"Range"];
         self.connection = [NSURLConnection connectionWithRequest:self.request delegate:self];
     }
