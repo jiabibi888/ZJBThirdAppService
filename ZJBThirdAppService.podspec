@@ -31,14 +31,16 @@ iOS_CBDThirdService提供第三方服务，包括分享（微信、qq、短信�
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZJBThirdAppService/Classes/SGdownloadManager/*'
-  s.vendored_frameworks = 'ZJBThirdAppService/Framework/CBDThirdAppService.framework', 'ZJBThirdAppService/Framework/Alipay/*', 'ZJBThirdAppService/Framework/TencentOpenAPI/*', 'ZJBThirdAppService/Framework/WechatOpenSDK/*'
+  s.vendored_frameworks = 'ZJBThirdAppService/Framework/CBDThirdAppService.framework'
   s.resource = 'ZJBThirdAppService/Framework/CBDThirdAppService.bundle'
+  # s.vendored_libraries = 'ZJBThirdAppService/Framework/Alipay/libcrypto.a', 'ZJBThirdAppService/Framework/Alipay/libssl.a','ZJBThirdAppService/Framework/WechatOpenSDK/libWeChatSDK.a'
     # s.resource_bundles = {
   #   'ZJBThirdAppService' => ['ZJBThirdAppService/Assets/*.png']
   # }
 
-
+  s.requires_arc = false
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'WebKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AliPay'
+  s.dependency 'WechatOpenSDK'
 end
